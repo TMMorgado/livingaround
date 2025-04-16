@@ -1,0 +1,140 @@
+/*geral do css*/
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html, body {
+    overflow-x: hidden;
+}
+
+
+/*formatar o primeiro bloco*/
+
+#bloco1{
+display: flex;
+background-image: url("capa.png"); /*imagem de capa*/
+width: 100%; /*largura */ 
+height: 816px; /* altura */
+background-position: center; 
+background-repeat: no-repeat;
+background-size: auto; /* a imagem é redimensionada para caber toda dentro*/
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+/* Titulo principal do site*/
+
+.titulo {
+    width: 693px;
+    height: 79px;
+    position: flex;
+    top: 369px;
+    left: 373px;
+  
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  
+    color: #FFFFFF; 
+    white-space: nowrap;
+  }
+  
+  /*formatar o segundo bloco*/
+
+  #bloco2{
+    width: 100% ;
+    height: 569px;
+    top:816px ;
+    background-color:#B49B2C40;
+  }
+
+    /*formatal texto segundo bloco*/
+
+  .tituloviva{
+    width: 575px;
+    height: 152px;
+    position:absolute;
+    top: 1025px;
+    left: 87px;
+
+    font-family: "Jura", sans-serif;
+    font-size: 43px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 118%;
+    color:#000000;
+    letter-spacing: 20%;
+    }
+
+   .alterarcor{
+    color:#686931
+   }
+    
+   /*criar linha vertical*/
+
+   .linha-vertical {
+    
+    width: 1px;
+    height: 345px;
+    position: absolute;
+    top: 928px;
+    left: 722px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    
+}
+
+
+/* RESPONSIVIDADE - MOBILE*/
+
+@media (max-width: 768px) {
+
+    #bloco1 {
+        height: 500px;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .titulo {
+        width: 90%;
+        font-size: 40px;
+        height: auto;
+        white-space: normal;
+    }
+
+    #bloco2 {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .tituloviva {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        height: auto;
+    }
+
+    .linha-vertical {
+        display: none;
+    }
+
+    .container .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .col {
+        margin-bottom: 20px;
+    }
+}
