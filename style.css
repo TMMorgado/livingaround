@@ -1,3 +1,6 @@
+/* Página principal do site dividida em 6 blocos*/
+
+
 /*geral do css*/
 
 * {
@@ -11,7 +14,37 @@ html, body {
 }
 
 
-/*formatar o primeiro bloco*/
+/*Navbar transparente total */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1); /* leve escurecimento opcional */
+  transition: background-color 0.3s ease;
+  
+}
+
+/* Navlinks estilosos */
+.navbar-nav .nav-link {
+  font-family: 'Jura', sans-serif;
+  color: white;
+  margin-left: 15px;
+  transition: color 0.3s;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 118%;
+  letter-spacing: 0%;
+    
+
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* destaque ao passar o mouse */
+}
+
+
+
+
+
+
+/*formatar o PRIMEIRO BLOCO*/
 
 #bloco1{
 display: flex;
@@ -22,7 +55,6 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: auto; /* a imagem é redimensionada para caber toda dentro*/
 position: relative;
-display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
@@ -47,6 +79,8 @@ text-align: center;
     white-space: nowrap;
   }
   
+  /*SEGUNDO BLOCO*/
+
   /*formatar o segundo bloco*/
 
   #bloco2{
@@ -91,6 +125,87 @@ text-align: center;
     border: 1px solid #000000;
     
 }
+
+/*criar linha horizontal*/
+.linhaHorizontal{
+    width: 60px;  
+    position: absolute;
+    top: 1042px;
+    left: 846px;
+    border: 8px solid #000000;
+
+}
+
+.linhaHorizontal2{
+    width: 50px;  
+    position: absolute;
+    top: 1263.05px;
+    left: 1302.06px;
+    border: 8px solid #000000;
+}
+
+.linha_vertical{
+    width: 50px;  
+    position: absolute;
+    top: 1092px;
+    left: 796px;
+    border: 10px solid #000000;   
+}
+
+
+    /* segundo bloco */
+    
+    /*titulos trabalhos remotos e restantes*/
+
+    .titulotrabalhos{
+    width: 300px;
+    height: 29px;
+    position:absolute;
+    top: 996px;
+    left: 918px;
+
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 118%;
+    color:#000000;
+    letter-spacing: 0%;
+    }
+
+    .titulosegunda{
+    width: 132px;
+    height: 96px;
+    position:absolute;
+    top: 1086px;
+    left: 834px;
+
+    font-family: "Jura", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 118%;
+    color:#000000;
+    letter-spacing: 0%;
+    list-style: none;
+    }
+
+    .tituloterceiro{
+    width: 132px;
+    height: 96px;
+    position:absolute;
+    top: 1086px;
+    left: 1152px;
+
+    font-family: "Jura", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 118%;
+    color:#000000;
+    letter-spacing: 0%;
+    list-style: none;
+    }
 
 
 /* RESPONSIVIDADE - MOBILE*/
