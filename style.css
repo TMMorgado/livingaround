@@ -1,255 +1,469 @@
-/* Página principal do site dividida em 6 blocos*/
 
+/*GERAL*/
 
-/*geral do css*/
+body, html { 
+margin: 0;
+padding: 0;
+max-width: 100%;
+overflow-x: hidden;
+}
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-
-}
-html, body {
-    overflow-x: hidden;
+box-sizing: border-box;
+a {
+text-decoration: none;
+   }
 }
 
-
-/*Navbar transparente total */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.1); /* leve escurecimento opcional */
-  transition: background-color 0.3s ease;
   
+/* NAVBAR */
+.navbar {
+padding-top: 20px;              
+padding-bottom: 20px;           /*espaçamento vertical interno dentro da navbar (acima e abaixo do conteúdo - padding-top & padding-bottom) */
+position: absolute;             /*Posiciona a navbar de forma absoluta relativamente ao seu elemento pai posicionado */
+top: 0;                         /*Coloca a navbar encostada ao topo da página */
+width: 100%;                    /*A navbar ocupa toda a largura do ecrã */
+z-index: 3;                     /*ordem da sobreposição (stacking) * - a navbar vai aparecer por cima de outros elementos com z-index inferior */
 }
 
-/* Navlinks estilosos */
+/* links da Navbar */
 .navbar-nav .nav-link {
-  font-family: 'Jura', sans-serif;
-  color: white;
-  margin-left: 15px;
-  transition: color 0.3s;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 118%;
-  letter-spacing: 0%;
-    
-
+font-family: "Jura", sans-serif;    /* fonte do texto usada nos links da navbar */
+font-weight: 700;                   /* espessura da fonte */
+line-height: 118%;                  /* Espaçamento entre linhas */
+letter-spacing: 0%;                 /* Espaço horizontal entre cada letra */
+color: #000 !important;           /* cor preta */
+font-size: 25px;                    /* tamanho da fonte: 25px */
 }
 
-.navbar-nav .nav-link:hover {
-  color: #ffc107; /* destaque ao passar o mouse */
-}
+/* Margens específicas por link */
+.espacamento-acomodacao {
+  margin-right: 79px;
+  }
+  .espacamento-locais {
+    margin-right: 64px;
+  }
+  .espacamento-blog {
+    margin-right: 58px;
+  }
+  .espacamento-contatos {
+    margin-right: 0; 
+  }
 
 
+/*SECÇÃO LIVING AROUND*/
+
+.bloco1living {
+display: flex;                        /* Ativa Flexbox para permitir centralização fácil */
+justify-content: center;             /* Alinha o conteúdo horizontalmente ao centro */
+align-items: center;                 /* Alinha o conteúdo verticalmente ao centro */
+height: 100vh;                       /* A altura da secção ocupa 100% da altura da janela (viewport height) */
+background: url('capa.png') no-repeat center center; /* Define a imagem de fundo, sem repetição, e centrada */
+background-size: cover;              /* Faz com que a imagem cubra toda a secção, adaptando-se ao tamanho */
+position: relative;                  /* Define a posição como "relativa" para permitir usar o ::before corretamente */
+  }
+  
+
+.tituloliv {
+position: relative;                  /* Define posição relativa para garantir que z-index funciona corretamente */
+z-index: 2;                          /* Este elemento fica acima do pseudo-elemento escurecido (::before) */
+text-align: center;                  /* Centraliza o texto dentro desta div */
+  }
+  
+.tituloliv h1 {
+font-family: "Josefin Slab", serif; /* Tipo de letra do título living */
+color: white;                        /* Cor do texto: branco, para contraste com o fundo escuro */
+font-size: 85px;                     /* Tamanho da fonte grande para destaque */
+font-weight: 700;                   /* Grau de negrito */
+line-height: 100%;                  /* Espaçamento entre linhas */
+letter-spacing: 0%;                /* Espaço horizontal entre cada letra */
+  }
 
 
+ /* SECÇÃO 2 */
 
-
-/*formatar o PRIMEIRO BLOCO*/
-
-#bloco1{
-display: flex;
-background-image: url("capa.png"); /*imagem de capa*/
-width: 100%; /*largura */ 
-height: 816px; /* altura */
-background-position: center; 
-background-repeat: no-repeat;
-background-size: auto; /* a imagem é redimensionada para caber toda dentro*/
+.section2 {
+width: 100%;
+height: 569px;
 position: relative;
+background-color: rgba(180, 155, 44, 0.25);
+  
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 60px 87px;
+flex-wrap: wrap;
+gap: 40px;
+box-sizing: border-box;
+  }
+  
+/* Coluna Esquerda - Texto de destaque */
+.Esquerda2 {
+width: 575px;
+height: 152px;
+  }
+  
+.Esquerda2 p {
+font-family: 'Jura', sans-serif;
+font-weight: 400;
+font-size: 43px;
+line-height: 118%;
+letter-spacing: 0.2em;
+color: #000;
+margin: 0;
+  }
+  
+/* Coluna Direita */
+.Direita1 {
+width: 575px;
+  }
+  
+/* Título da secção */
+.titulodireita {
+font-family: 'Jura', sans-serif;
+font-weight: 700;
+font-size: 30px;
+line-height: 118%;
+color: #000;
+margin-bottom: 20px;
+text-align: center;
+  }
+  
+/* Área das listas com cantos decorativos */
+.decorated-lists {
+position: relative;
+padding: 40px;
+  }
+  
+/* Cantos decorativos */
+.corner {
+width: 50px;
+height: 50px;
+position: absolute;
+border: 10px solid #000;
+}
+  
+.top-left {
+top: 0;
+left: 0;
+border-right: none;
+border-bottom: none;
+  }
+  
+.bottom-right {
+bottom: 0;
+right: 0;
+border-left: none;
+border-top: none;
+}
+  
+/* Container das duas listas lado a lado */
+.lists-container {
+display: flex;
+justify-content: space-between;
+gap: 40px;
+ }
+  
+/* Estilo das listas */
+.lists-container ul {
+list-style: none;
+padding: 0;
+margin: 0;
+font-family: 'Jura', sans-serif;
+font-size: 18px;
+color: #000;
+width: 132px;
+height: auto;
+font-weight: 700;
+  }
+  
+/* Linha vertical */
+.vertical-divider {
+position: absolute;
+top: 20%;
+bottom: 20%;
+left: 50%;
+width: 1px;
+background-color: black;
+transform: translateX(-50%);
+z-index: 1;
+  }
+
+/*secção 3*/
+.bloco3{
+width: 100%;
+height: 515px;
+position: relative;
+display: flex;              
+align-items: center;            
+box-sizing: border-box;
+  }
+
+.esquerda3{
+width:607px;
+height: 515px;
+background-image: url(2.png);
+background-color: #000;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.direita3{
+flex:1;
+background-color: #000;
+padding: 60px;
+height: 515px;
+justify-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.direita3 h2 {
+text-align: center;
+font-family: 'Jura', sans-serif;
+font-size: 30px;
+line-height: 118%;
+letter-spacing: 0%;
+color:rgba(225, 225, 225, 1);
+margin-top: 16%;
+}
+
+/* botão*/
+.descobrir {
+        
+background-color: black;          /* Centro preto */
+color: white;                     /* Texto branco */
+border: 3px solid white;          /* Contorno branco */
+border-radius: 30px;              /* Bordas redondas */
+padding: 12px 24px;               /* Espaçamento interno */
+font-family: 'Jura', sans-serif; /* Fonte (se estiveres a usar esta) */
+font-size: 25px;
+line-height: 118%;
+font-weight: 700;
+cursor: pointer;
+margin-top: 30px;
+padding:20px 70px ;
+}
+/*bloco4*/
+
+.bloco4{
+width: 100%;
+height: 541px;
+position: relative;
+display: flex;              
+align-items: center;            
+box-sizing: border-box;
+background-color:rgba(180, 155, 44, 0.25) ;
+}
+        
+.esquerda4{
+flex:1;
+background-color: rgba(180, 155, 44, 0.25);
+padding: 60px;
+padding-left: 200px;
+height: 541px;
+justify-content: center;
+               
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start; /* aliha a esquerda horizontal*/
+}
+          
+.esquerda4 h2{
+text-align: justify;
+font-family: 'Jura', sans-serif;
+font-size: 30px;
+line-height: 118%;
+letter-spacing: 0%;
+color:black;
+}
+        
+.explorar{
+background-color:rgba(180, 155, 44, 0.25);          /* Centro preto */
+color: black;                     /* Texto branco */
+border: 3px solid black;          /* Contorno branco */
+border-radius: 30px;              /* Bordas redondas */
+padding: 12px 24px;               /* Espaçamento interno */
+font-family: 'Jura', sans-serif; /* Fonte (se estiveres a usar esta) */
+font-size: 25px;
+line-height: 118%;
+font-weight: 700;
+cursor: pointer;
+margin-top: 30px;
+padding:20px 70px ;
+ }
+      
+.direita4{
+width:720px;   
+height: 541px;
+background-image: url(11.png);
+background-color: #000;
+background-size: cover;
+background-repeat: no-repeat;       
+background-position: center;
+ }
+      
+/*BLOCO 5*/
+
+.bloco5{
+  display: flex;                        /* Ativa Flexbox para permitir centralização fácil */
+  justify-content: center;             /* Alinha o conteúdo horizontalmente ao centro */
+  align-items: center;                 /* Alinha o conteúdo verticalmente ao centro */
+  height: 100vh;    
+  
+              
+
+}
+
+.imgbloco5{
+  display: flex;
+  width: 100%;
+  background-image: url(12.png);
+  background-size: cover;              /* Faz com que a imagem cubra toda a secção, adaptando-se ao tamanho */
+position: relative; 
+height: 690.51px; 
 align-items: center;
 justify-content: center;
-text-align: center;
+
 }
 
-/* Titulo principal do site*/
+.blog5{
+background-color:black;         
+color: white;                     
+border: none;
+        
+border-radius: 30px;                           
+font-family: 'Jura', sans-serif; 
+font-size: 25px;
+line-height: 118%;
+font-weight: 700;
+cursor: pointer;
+margin-top: 30px;
+padding:20px 90px ;
 
-.titulo {
-    width: 693px;
-    height: 79px;
-    position: flex;
-    top: 369px;
-    left: 373px;
+}
+
+#footercont{
+  display: flex;
+  width: 100%;
+  height: 266px;
+  background-color: #000;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.footerliving{
+color: white;
+text-align: justify;
+font-family: 'Jura', sans-serif;
+font-size: 30px;
+line-height: 118%;
+letter-spacing: 0%;
+font-weight: 700;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.footerimg{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0;
+  width: 58px;
+  height: 57px;
+
+}
+
+.footertext{
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 118%;
+  letter-spacing: 0%;
+  color: white;
+}
   
-    font-family: 'Josefin Slab', serif;
-    font-weight: 700;
-    font-size: 85px;
-    line-height: 100%;
-    letter-spacing: 0%;
+ 
   
-    color: #FFFFFF; 
-    white-space: nowrap;
-  }
+  @media (max-width: 768px) {
+    .section2 {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 20px;
+      height: auto;
+    }
   
-  /*SEGUNDO BLOCO*/
-
-  /*formatar o segundo bloco*/
-
-  #bloco2{
-    width: 100% ;
-    height: 569px;
-    top:816px ;
-    background-color:#B49B2C40;
-  }
-
-    /*formatal texto segundo bloco*/
-
-  .tituloviva{
-    width: 575px;
-    height: 152px;
-    position:absolute;
-    top: 1025px;
-    left: 87px;
-
-    font-family: "Jura", sans-serif;
-    font-size: 43px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 118%;
-    color:#000000;
-    letter-spacing: 20%;
+    .Esquerda2, .Direita1 {
+      width: 100%;
+    }
+  
+    .Esquerda2 p {
+      font-size: 28px;
+      letter-spacing: 0.1em;
+      line-height: 1.3;
+      text-align: center;
+    }
+  
+    .titulodireita {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .lists-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .lists-container ul {
+      width: auto;
+      text-align: center;
+    }
+  
+    .decorated-lists {
+      padding: 20px;
+    }
+  
+    .corner {
+      display: none;
+    }
+  
+    .vertical-divider {
+      display: none;
     }
 
-   .alterarcor{
-    color:#686931
-   }
-    
-   /*criar linha vertical*/
-
-   .linha-vertical {
-    
-    width: 1px;
-    height: 345px;
-    position: absolute;
-    top: 928px;
-    left: 722px;
-    background-color: #000000;
-    border: 1px solid #000000;
-    
-}
-
-/*criar linha horizontal*/
-.linhaHorizontal{
-    width: 60px;  
-    position: absolute;
-    top: 1042px;
-    left: 846px;
-    border: 8px solid #000000;
-
-}
-
-.linhaHorizontal2{
-    width: 50px;  
-    position: absolute;
-    top: 1263.05px;
-    left: 1302.06px;
-    border: 8px solid #000000;
-}
-
-.linha_vertical{
-    width: 50px;  
-    position: absolute;
-    top: 1092px;
-    left: 796px;
-    border: 10px solid #000000;   
-}
-
-
-    /* segundo bloco */
-    
-    /*titulos trabalhos remotos e restantes*/
-
-    .titulotrabalhos{
-    width: 300px;
-    height: 29px;
-    position:absolute;
-    top: 996px;
-    left: 918px;
-
-    font-family: "Jura", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 118%;
-    color:#000000;
-    letter-spacing: 0%;
-    }
-
-    .titulosegunda{
-    width: 132px;
-    height: 96px;
-    position:absolute;
-    top: 1086px;
-    left: 834px;
-
-    font-family: "Jura", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 118%;
-    color:#000000;
-    letter-spacing: 0%;
-    list-style: none;
-    }
-
-    .tituloterceiro{
-    width: 132px;
-    height: 96px;
-    position:absolute;
-    top: 1086px;
-    left: 1152px;
-
-    font-family: "Jura", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 118%;
-    color:#000000;
-    letter-spacing: 0%;
-    list-style: none;
-    }
-
-
-/* RESPONSIVIDADE - MOBILE*/
-
-@media (max-width: 768px) {
-
-    #bloco1 {
-        height: 500px;
-        background-size: cover;
-        padding: 20px;
-    }
-
-    .titulo {
-        width: 90%;
-        font-size: 40px;
-        height: auto;
-        white-space: normal;
-    }
-
-    #bloco2 {
-        height: auto;
-        padding: 30px 15px;
-    }
-
-    .tituloviva {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 100%;
-        font-size: 28px;
-        text-align: center;
-        height: auto;
-    }
-
-    .linha-vertical {
-        display: none;
-    }
-
-    .container .row {
+    .bloco4 {
+        height: auto; /* Ajusta a altura para permitir o conteúdo fluir bem */
         flex-direction: column;
-        align-items: center;
-    }
-
-    .container .col {
-        margin-bottom: 20px;
-    }
-}
+      }
+    
+      .esquerda4 {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto; /* Ajusta a altura para o conteúdo */
+        align-items: center; /* Alinha o conteúdo ao centro em telas menores */
+      }
+    
+      .esquerda4 h2 {
+        font-size: 24px; /* Tamanho de fonte menor em telas pequenas */
+        text-align: center; /* Centraliza o texto */
+      }
+    
+      .explorar {
+        padding: 12px 40px; /* Ajuste do padding em telas pequenas */
+        font-size: 20px; /* Reduz o tamanho da fonte */
+      }
+    
+      .direita4 {
+        width: 100%; /* A largura da imagem ocupa 100% da tela */
+        height: 300px; /* Reduz a altura da imagem */
+        background-position: center;
+      }
+    
+  }
+  

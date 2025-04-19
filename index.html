@@ -1,125 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living around</title>
-    
-    <!-- link para css-->
-    
+    <title>Living Around</title>
+
+  <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
-
     
-    <!-- link bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
-    <!-- linnk para google fonts-->
+  <!--Link Tipo de letra: Josefin Slab-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-    <!-- outro link google fonts "jura"-->
+  <!--Link Tipo de Letra: Jura-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
-
-</head>
-
-<body>
-
-    <!-- NAVBAR FIXA NO TOPO E TRANSPARENTE -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
   
-      <!-- Itens do menu -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#bloco1">Acomodação</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#bloco2">Locais</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#bloco3">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#bloco4">Contatos</a>
-          </li>
+  </head>
+
+  <!--NAVBAR E SCROLLSPY  -->
+    <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent"> 
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"> 
+    </a> 
+    
+  <!-- mobile  -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item acomodacao">
+          <a class="nav-link espacamento-acomodacao" href="#bloco3">Acomodação</a>
+        </li>
+        <li class="nav-item locais">
+          <a class="nav-link espacamento-locais" href="#bloco4">Locais</a>
+        </li>
+        <li class="nav-item blog">
+          <a class="nav-link espacamento-blog" href="#sectionBlog">Blog</a>
+        </li>
+      <li class="nav-item contatos">
+        <a class="nav-link espacamento-contatos" href="#sectionContatos">Contatos</a>
+      </li>              
         </ul>
-      </div>
+        </div>
+        </div> 
+    </nav>
+
+<!--SECÇÃO 1-->
+<section class="bloco1living">
+  <div class="tituloliv">
+    <h1>LIVING AROUND</h1>
+  </div>
+  </section>
+
+<!--SECÇÃO 2 -->
+<section class="section2">
+  <div class="Esquerda2">
+  <p>Viva <b><span style="color: #686931">livre</span></b>, trabalhe de qualquer lugar, descubra o <b><span style="color: #686931">mundo</span></b>.
+    </p>
     </div>
-  </nav>
+<div class="Direita1">
+  <h2 class="titulodireita">Trabalhos Remotos</h2>
+<div class="decorated-lists">
+    <div class="corner top-left"></div>
+    <div class="corner bottom-right"></div>
+    <div class="lists-container">
+    <ul>
+      <li>Indeed</li>
+      <li>LinkedIn</li>
+      <li>JobRemote</li>
+      <li>GoogleJobs</li>
+    </ul>
+    <ul>
+      <li>Indeed</li>
+      <li>LinkedIn</li>
+      <li>JobRemote</li>
+      <li>GoogleJobs</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+
+    <!-- divisao meio tabela-->
+    <div class="vertical-divider d-none d-lg-block"></div>
+</section>
   
+<!--SECÇÃO 3 -->
+<section id="bloco3"class="bloco3">
+  <div class="esquerda3" img src="2.png" alt="Imagem" class="imagemesquerda"></div>
+  <div class="direita3"><h2>Descubra o seu novo <p></p>escritório</h2> 
+  <a href="descobrir.html"> <button class="descobrir">Descobrir</button></a></div>
+  </section>
 
+<!--SECÇÃO 4-->
+<section id="bloco4"class="bloco4">
+  <div class="esquerda4">
+  <h2>  &nbsp;&nbsp;&nbsp;Temos destinos <p></p>especiais para você</h2> 
+  <a href="METERPÁGINA"> <button class="explorar">Explorar</button></a>
+  </div>
+  <div class="direita4" img src="11.png" alt="imagem11" class="imagem4direita">
+  </div>
+  </section>
 
-
+<!--SECÇÃO 5-->
+<section id="bloco5">
+  <div class="imgbloco5"> <button onclick="window.location.href='pagenotfound.html'" class="blog5">BLOG</button>
+  </section></div> 
   
+<!-- RODAPÉ -->
+<footer id="footercont">
+  <h2 class="footerliving">LIVING AROUND</h2>
 
-    <!-- página principal com 6 blocos-->
-
-     <!-- Abrir o primeiro bloco-->
-         <section id="bloco1">
-            <h1 class="titulo">LIVING AROUND</h1>
-            <p></p>
-            </section>
-
-
-    <!-- Abrir o segundo bloco-->
-        <section id="bloco2">
-                
-    <!--linhas vertical a meio do bloco-->
-        <div class="linha-vertical"></div>
-
-    <!--linhas horizontais e verticais na subcoluna-->
-        <div class="linhaHorizontal"></div>
-        <div class="linhaHorizontal2"></div>
-        <div class=" linha_vertical"></div>
-        <div class="linha_vertical2"></div>
-
-
-
-    <!-- colocar coluna através do bootstrap-->
-        <div class="container text-center">
-            <div class="row align-items-end">
-                <div class="col">
-                    <h1 class="tituloviva">Viva 
-                    <span class="alterarcor">livre</span>
-                    , trabalhe de qualquer lugar descubra o 
-                    <span class="alterarcor"> mundo.</span>
-                    </h1>
-        <div class="row">                    
-        <div class="col">
-            <h2 class="titulotrabalhos">Trabalhos Remotos</h2>
-
-    <!-- Subcolunas dentro da coluna "pai" -->
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <ul class="titulosegunda"> 
-                        <li>Indeed</li>
-                        <li>Linkedin</li>
-                        <li>JobRemote</li>
-                        <li> GoogleJobs</li>
-                        </ul>
-                        </div>
-            <div class="col-md-6 col-12">
-                    <ul class="tituloterceiro">
-                        <li>Indeed</li>
-                        <li>Linkedin</li>
-                        <li>JobRemote</li>
-                        <li> GoogleJobs</li>
-                    </ul>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-        </section>
+  <div class="footerimg">
+    <img src="face.png" alt="facebook">
+    <img src="insta.png" alt="instagram">
+    <img src="x.png" alt="x-social">
+    </div>
+      
+    <p class="footertext">Power by Cesae Digital</p>
+  </footer>
 
 
 
@@ -129,42 +136,9 @@
 
 
 
-
-            
-              <!-- Abrir o terceiro bloco-->
-              <section id="bloco3">
-                <h2>Bloco 3</h2>
-                <p>Conteúdo do bloco 3...</p>
-              </section>
-            
-              <!-- Abrir o quarto bloco-->
-              <section id="bloco4">
-                <h2>Bloco 4</h2>
-                <p>Conteúdo do bloco 4...</p>
-              </section>
-            
-              <!-- Abrir o quinto bloco-->
-              <section id="bloco5">
-                <h2>Bloco 5</h2>
-                <p>Conteúdo do bloco 5...</p>
-              </section>
-            
-              <!-- Abrir o sexto bloco-->
-              <section id="bloco6">
-                <h2>Bloco 6</h2>
-                <p>Conteúdo do bloco 6...</p>
-              </section>
-            
-            
-    
-    
-    
-      <!--script bootstarp-->
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    
-    
-    
+    <!-- Link Bootstrap via JS -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb3R9QJcmwYpHsu23jjZ9zJXX5l0JHe3oD/9f/4z5W/Cp8tKk4" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0c1zBf8C21hWzR8g2p7Jq8wtlx6XJK4NleLgT89Xyz+Os1Dp" crossorigin="anonymous"></script>
 
 </body>
 </html>
