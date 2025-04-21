@@ -1,0 +1,124 @@
+/* NAVBAR */
+.navbar {
+    padding-top: 20px;              
+    padding-bottom: 20px;           /*espaçamento vertical interno dentro da navbar (acima e abaixo do conteúdo - padding-top & padding-bottom) */
+    position: flex;             /*Posiciona a navbar de forma absoluta relativamente ao seu elemento pai posicionado */
+    top: 0;                         /*Coloca a navbar encostada ao topo da página */
+    width: 100%;                    /*A navbar ocupa toda a largura do ecrã */
+    z-index: 3;                     /*ordem da sobreposição (stacking) * - a navbar vai aparecer por cima de outros elementos com z-index inferior */
+    padding-left: 80px;
+    padding-right: 80px;
+    }
+    
+    /* links da Navbar */
+    .navbar-nav .nav-link {
+    font-family:"Josefin Slab", serif;;    /* fonte do texto usada nos links da navbar */
+    font-weight: 700;                   /* espessura da fonte */
+    line-height: 100%;                  /* Espaçamento entre linhas */
+    letter-spacing: 0%;                 /* Espaço horizontal entre cada letra */
+    color: white;           /* cor preta */
+    font-size: 25px;                    /* tamanho da fonte: 25px */
+    text-transform: uppercase;
+    }
+    
+    /* Margens específicas por link */
+    .espacamento-acomodacao {
+      margin-right: 79px;
+      }
+      .espacamento-locais {
+        margin-right: 64px;
+      }
+      .espacamento-blog {
+        margin-right: 58px;
+      }
+      .espacamento-contatos {
+        margin-right: 0; 
+      }
+  
+      .logo{
+        width: 58.99px;
+        height: 61.26px;
+      }
+  
+
+
+body{
+    background-image: url(1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container1{
+    width: 466px;
+    height: 642px;
+    border-radius: 35px;
+    background-color: rgba(217, 217, 217, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.form-select{
+    width: 345px;
+    height: 76px;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    font-family:"Jura", sans-serif ;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0;
+    color:rgba(30, 30, 30, 1);
+    ;
+}
+#cidade{
+
+margin-bottom: 40px;
+}
+#pais{
+
+}
+
+.descricao{
+    margin-left: -80px;
+    font-family:"Jura", sans-serif ;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 1);
+}
+.descricao2{
+    margin-top: 40px;
+    margin-left: -60px;
+    font-family:"Jura", sans-serif ;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0;
+    color:rgba(0, 0, 0, 1);
+    
+}
+
+#botaover{
+    background-color: rgba(104, 105, 49, 1);
+    color: black;
+    width:345px ;
+    height: 76px;
+    border-radius: 15px;
+
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0;
+}

@@ -1,0 +1,172 @@
+/* NAVBAR */
+.navbar {
+    padding-top: 20px;              
+    padding-bottom: 20px;           /*espaçamento vertical interno dentro da navbar (acima e abaixo do conteúdo - padding-top & padding-bottom) */
+    position: flex;             /*Posiciona a navbar de forma absoluta relativamente ao seu elemento pai posicionado */
+    top: 0;                         /*Coloca a navbar encostada ao topo da página */
+    width: 100%;                    /*A navbar ocupa toda a largura do ecrã */
+    z-index: 3;                     /*ordem da sobreposição (stacking) * - a navbar vai aparecer por cima de outros elementos com z-index inferior */
+    padding-left: 80px;
+    padding-right: 80px;
+    }
+    
+    /* links da Navbar */
+    .navbar-nav .nav-link {
+    font-family:"Josefin Slab", serif;;    /* fonte do texto usada nos links da navbar */
+    font-weight: 700;                   /* espessura da fonte */
+    line-height: 100%;                  /* Espaçamento entre linhas */
+    letter-spacing: 0%;                 /* Espaço horizontal entre cada letra */
+    color: white;           /* cor preta */
+    font-size: 25px;                    /* tamanho da fonte: 25px */
+    text-transform: uppercase;
+    }
+    
+    /* Margens específicas por link */
+    .espacamento-acomodacao {
+      margin-right: 79px;
+      }
+      .espacamento-locais {
+        margin-right: 64px;
+      }
+      .espacamento-blog {
+        margin-right: 58px;
+      }
+      .espacamento-contatos {
+        margin-right: 0; 
+      }
+  
+      .logo{
+        width: 58.99px;
+        height: 61.26px;
+      }
+  
+
+
+body{
+    background-image: url(3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: auto;
+    background-color: black;
+    border-radius: 30px;
+    width: 467px;
+    height: 700px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.form-label{
+    color: white;
+    font-family: 'jura' sans-serif;
+    font-size: 20px;
+    line-height: 118%;
+    letter-spacing: 0%;
+    font-weight: 700;
+}
+
+.mb-3{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.enviarbotao{
+    margin-top: 20px;
+    width: 338px;
+    height: 76px;
+    border-radius: 40px;
+    border: 3px solid white;
+
+    display: block;
+    margin: 0 auto;
+
+    font-family: 'jura' sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0;
+
+    color: white;
+    background-color: black;
+
+}
+
+.input-nome {
+    margin-bottom: 20px;
+    width: 338px;
+    height: 76px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.input-email {
+    margin-bottom: 20px;
+    width: 338px;
+    height: 76px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.input-mensagem {
+    margin-bottom: 40px;
+    width: 338px;
+    height: 161px;
+    font-size: 16px;
+    border-radius: 15px;
+    resize: none;
+
+}
+
+/*texto de lado */
+
+.textopag{
+margin-right: 60px;
+margin-bottom: 200px;
+}
+
+.textolado{
+    font-family: 'Jura' sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0;
+    color: white;
+}
+.textoladoautor{
+    font-family: 'Jura' sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 118%;
+    letter-spacing: 0;
+    color: white;
+}
+
+#paragrafotexto{
+    margin: 0;
+
+}
+         

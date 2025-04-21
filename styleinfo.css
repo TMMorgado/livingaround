@@ -1,0 +1,151 @@
+ /*PAGINA INFO */
+/* Fundo com imagem */
+.background {
+    background-image: url('10.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgba(30,30,30,0.81);
+    
+  }
+  
+  /* Card customizado */
+
+
+  .custom-card {
+    width: 763px;
+    height: auto;
+    border-radius: 35px;
+    overflow:hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    align-content: center;
+
+    z-index: 3;
+  }
+  .card-img-top{
+    width: 680px;
+    height: 367px;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 35px;
+  }
+  
+  .card-text {
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 118%;
+  letter-spacing: 0%;
+  margin-left: 30px;
+  margin-right: 30px;
+  }
+  
+  #texto1{
+    
+    margin: 0;
+  }
+  
+  #texto2{
+    margin-top: -15px;
+    text-align: left;
+    
+  }
+  
+
+
+  .card-title{
+    text-align: center;
+    font-family: 'Jura' sans-serif;
+    font-size: 30px;
+    line-height: 118%;
+    letter-spacing: 0%;
+    color: black;
+  }
+
+  .btn-custom {
+    display: flex;
+    width: 345px;
+    height: 76px;
+    margin: 0 auto; 
+    background-color: rgba(104, 105, 49, 1);
+    color: black;
+    font-family: 'Jura', sans-serif;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0%;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    line-height: 76px; 
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    
+
+    
+
+    
+
+
+  }
+  
+  
+  /* Responsividade adicional para tablets e telemóveis */
+@media (max-width: 992px) {
+    .custom-card {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      margin: 20px auto 0 auto;
+    }
+  
+    .card-title {
+      font-size: 24px;
+    }
+  
+    .card-text {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  
+    .btn-custom {
+      width: 80%;
+      height: 60px;
+      font-size: 20px;
+      line-height: 60px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .background {
+      padding: 1rem;
+    }
+  
+    .card-title {
+      font-size: 22px;
+    }
+  
+    .card-text {
+      font-size: 15px;
+    }
+  
+    .btn-custom {
+      width: 100%;
+      font-size: 18px;
+      height: 55px;
+      line-height: 55px;
+    }
+  }
+  

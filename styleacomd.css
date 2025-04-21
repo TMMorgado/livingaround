@@ -58,12 +58,17 @@ body, html {
         height: 61.26px;
       }
   
+      
+ 
+   
   
+    
   
     .containerhead{
       display: flex;
       width: 100%;
       height: 980px;
+      z-index: 1;
       
      
       align-items: center;
@@ -71,6 +76,8 @@ body, html {
       background-size: 1447px cover;
       background-position: center;
       background-repeat: no-repeat;
+      position: relative;
+      overflow: hidden;
       
       
       
@@ -102,13 +109,16 @@ body, html {
     /*conainer corpo */
 
     .containercorpo{
-      background-color:#B49B2C40 ;
+      background-color:rgba(180, 155, 44, 0.25);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       padding: 0 20px;
+      
+      position: relative;
+      z-index: 3;
       
       
  }
@@ -237,42 +247,7 @@ color: #000;
 
 
 
-      /*PAGINA INFO */
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.centered-card {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 3;
-  max-width:763px ;
-  width: 100%;
-  max-height: 1262px;
-  height: 100%;
-}
-
-.card-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
+     
 
 
 

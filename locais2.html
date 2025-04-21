@@ -20,7 +20,7 @@
 
 
 <!-- Link CSS -->
-<link rel="stylesheet" href="stylelocais.css">
+<link rel="stylesheet" href="stylelocais2.css">
 </head>
 
 
@@ -48,7 +48,7 @@
         <a class="nav-link espacamento-locais" href="index.html">Locais</a>
       </li>
       <li class="nav-item blog">
-        <a onclick="alertblog()" class="nav-link espacamento-blog" href="#sectionBlog">Blog</a>
+        <a onclick="alertablog()" class="nav-link espacamento-blog" href="#sectionBlog">Blog</a>
       </li>
     <li class="nav-item contatos">
       <a class="nav-link espacamento-contatos" href="contactos.html">Contatos</a>
@@ -59,9 +59,9 @@
   </nav>
 
 
-  
-
-  <!-- seccao  -->
+  <!--Container pai onde fica o container 1 e 2-->
+<section class="containerpai">
+  <!-- container 1 da escolha do pais e cidade  -->
   <section class="container1">
    <div class="descricao">Escolha o seu país</div>
     <select id="pais" class="form-select" aria-label="Default select example"> 
@@ -79,7 +79,18 @@
     <button id="botaover">Ver</button>
     
   </section>
-  
+
+  <!--container 2 mapa e morada -->
+  <section class="container2">
+    <div class="imagemmapa"></div>
+    <div class="morada">
+        <h2 id="titulomorada">LIVING AROUND - PORTO</h2> 
+       <h2 id="textomorada">Rua da Alegria, 666<p></p>4000-789 - Porto</h2>
+       <h2 id="emailmorada">living arround_porto@living.com</h2>
+
+    </div>
+  </section>
+</section>
 
 
 
@@ -100,8 +111,8 @@
   function mostrarAlerta() {
     alert("O SEU FORMULÁRIO FOI ENVIADO!");
   }
-  function alertblog() {
-    alert("Blog em construção. Pedimos desculpa pelo incônveniente");
+  function alertablog(){
+    alert("Blog em atualização. Pedimos desculpa pelo incômodo");
   }
 </script>
 
