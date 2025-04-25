@@ -1,7 +1,7 @@
  /*PAGINA INFO */
 /* Fundo com imagem */
 .background {
-    background-image: url('10.png');
+    background-image: url('assets/images/sunsetCaravan.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;

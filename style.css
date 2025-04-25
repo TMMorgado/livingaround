@@ -12,6 +12,7 @@ overflow-x: hidden;
 box-sizing: border-box;
 a {
 text-decoration: none;
+color: #000;
    }
 }
 
@@ -50,6 +51,10 @@ font-size: 25px;                    /* tamanho da fonte: 25px */
     margin-right: 0; 
   }
 
+  /* Deactivate elastic effect on browser. Mock ups on figma don't have this behaviour but I left it because it seems more beautiful.
+  /* html, body {
+    overscroll-behavior: none;
+  } */
 
 /*SECÇÃO LIVING AROUND*/
 
@@ -58,7 +63,7 @@ display: flex;                        /* Ativa Flexbox para permitir centraliza�
 justify-content: center;             /* Alinha o conteúdo horizontalmente ao centro */
 align-items: center;                 /* Alinha o conteúdo verticalmente ao centro */
 height: 100vh;                       /* A altura da secção ocupa 100% da altura da janela (viewport height) */
-background: url('capa.png') no-repeat center center; /* Define a imagem de fundo, sem repetição, e centrada */
+background: url('assets/images/capa.png') no-repeat center center; /* Define a imagem de fundo, sem repetição, e centrada */
 background-size: cover;              /* Faz com que a imagem cubra toda a secção, adaptando-se ao tamanho */
 position: relative;                  /* Define a posição como "relativa" para permitir usar o ::before corretamente */
   }
@@ -202,7 +207,7 @@ box-sizing: border-box;
 .esquerda3{
 width:607px;
 height: 515px;
-background-image: url(2.png);
+background-image: url(assets/images/greenCaravan.png);
 background-color: #000;
 background-size: cover;
 background-repeat: no-repeat;
@@ -300,7 +305,7 @@ padding:20px 70px ;
 .direita4{
 width:720px;   
 height: 541px;
-background-image: url(11.png);
+background-image: url(assets/images/woods.png);
 background-color: #000;
 background-size: cover;
 background-repeat: no-repeat;       
@@ -322,7 +327,7 @@ background-position: center;
 .imgbloco5{
   display: flex;
   width: 100%;
-  background-image: url(12.png);
+  background-image: url(assets/images/computerIphone.png);
   background-size: cover;              /* Faz com que a imagem cubra toda a secção, adaptando-se ao tamanho */
 position: relative; 
 height: 690.51px; 

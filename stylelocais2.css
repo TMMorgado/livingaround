@@ -43,7 +43,7 @@
 
 
 body{
-    background-image: url(1.png);
+    background-image: url(assets/images/compass.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@ p{
     width: 466px;
     height: 363px;
     border-radius: 10px;
-    background-image: url(mapa.png);
+    background-image: url(assets/images/mapa.png);
 }
 .morada{
     margin-top: 30px;
