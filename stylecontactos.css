@@ -171,3 +171,56 @@ margin-bottom: 200px;
 
 }
          
+/* Modal personalizado */
+
+.alert-custom {
+    width: 741px;
+    height: 192.44px;
+    border-radius: 35px;
+    background-color: white;
+    font-family: "Jura", sans-serif;
+    color: #1e1e1e;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .alert-header {
+    background-color: white;
+    color: white;
+    font-weight: bold;
+    font-size: 2px;
+    font-family: "Josefin Slab", serif;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  
+  .alert-body {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .alert-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: none;
+  }
+  
+  .btn-custom {
+    width:265.1px ;
+    height: 59.09px;
+    background-color: #61B2F5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 35px;
+    transition: background-color 0.3s ease;
+    font-family: "Jura", sans-serif;
+  }
+  
+  
+  
