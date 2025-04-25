@@ -40,14 +40,14 @@ Na **Home Page**, temos uma navbar responsiva com o logótipo e acesso a todas a
 - **CSS** – Estilo e layout
 - **JavaScript** – Utilizado para criar alertas simples
 - **Bootstrap 5** – Framework para responsividade
-**Google Fonts** – Para as tipografias personalizadas
+- **Google Fonts** – Para as tipografias personalizadas
 - **Visual Studio Code** – Editor de código utilizado
 
 ---
 
 ##  Responsividade
 
-O site adapta-se a diferentes tamanhos de ecrã (computador, tablet e telemóvel) utilizando Flexbox, media queries e Bootstrap.
+O site foi desenvolvido num macbook 13 polegadas, no entanto adapta-se a diferentes tamanhos de ecrã (computador, tablet e telemóvel) utilizando Flexbox, media queries e Bootstrap.
 
 ---
 
