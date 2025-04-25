@@ -227,3 +227,9 @@ html {
   padding-top: 20px;
   padding-left: 80px;
 }
+
+@media (max-width: 768px) {
+  .navbar-collapse{
+    background-color: wheat;
+  }
+}

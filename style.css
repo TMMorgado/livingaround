@@ -470,6 +470,10 @@ margin-bottom: 30px;
         height: 300px; /* Reduz a altura da imagem */
         background-position: center;
       }
+      .navbar-collapse{
+        background-color: wheat;
+      
+      }
     
   }
   

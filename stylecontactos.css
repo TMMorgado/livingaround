@@ -223,4 +223,8 @@ margin-bottom: 200px;
   }
   
   
-  
+  @media (max-width: 768px) {
+    .navbar-collapse{
+      background-color: black;
+    }
+  }
